@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import rospy
-from std_msgs.msg import Int32, String
+from std_msgs.msg import UInt8, String
 
 def callback(data):
     pub = rospy.Publisher('/Signaal', String,  queue_size=1)
@@ -30,7 +30,7 @@ def listener():
     rospy.init_node('listener')
     
     # Subscriber op '/avans/buttons/state' met inhoud integer
-    rospy.Subscriber('/avans/buttons/state', Int32, callback)
+    rospy.Subscriber('/avans/buttons/state', UInt8, callback)
     
     # Keep the node running
     rospy.spin()

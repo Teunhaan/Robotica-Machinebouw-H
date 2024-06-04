@@ -19,9 +19,9 @@ def callback(data):
         rospy.loginfo("Received 4: Case 4")
         pub.publish('Stop')
     elif value == 8:
-        # Gelezen waarde is 8 waarde ?? wordt geupload naar topic /Signaal 
+        # Gelezen waarde is 8 waarde Noodstop wordt geupload naar topic /Signaal 
         rospy.loginfo("Received 8: Case 8")
-        pub.publish('??')
+        pub.publish('Noodstop')
     else:
         rospy.logwarn("Received unexpected value: %d", value)
 

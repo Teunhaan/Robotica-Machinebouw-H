@@ -27,7 +27,7 @@ def callback(data):
 
 def listener():
     # Initialize the ROS node
-    rospy.init_node('listener')
+    rospy.init_node('Knoppen_listener')
     
     # Subscriber op '/avans/buttons/state' met inhoud integer
     rospy.Subscriber('/avans/buttons/state', UInt8, callback)

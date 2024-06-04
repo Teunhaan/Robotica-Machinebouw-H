@@ -6,3 +6,6 @@ https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/EcvqOJ_AaC
 
 Voor de installatie van de DepthAI
 https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/Ec2HpCpVXiBIrjsEPfQ13cEBkrA88vurGBB4vtmlMoKHyQ?e=5HJvUk
+
+Voor installatie van de Robot
+https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/EU5BhHd7MQ9OhqBt5MU01GYBWvODwn5Ksggk1Jgt9Bv_Rg?e=gdMnOT

@@ -6,27 +6,30 @@ from std_msgs.msg import UInt8, String
 def callback(data):
     pub = rospy.Publisher('/Signaal', String,  queue_size=1)
     value = data.data
-    if value == 1:
-        # Gelezen waarde is 1 waarde Start wordt geupload naar topic /Signaal 
-        rospy.loginfo("Received 1: Case 1")
-        pub.publish('Start')
-    elif value == 2:
-        # Gelezen waarde is 2 waarde Start Single wordt geupload naar topic /Signaal 
-        rospy.loginfo("Received 2: Case 2")
-        pub.publish('Start Single')
-    elif value == 4:
-        # Gelezen waarde is 4 waarde Stop wordt geupload naar topic /Signaal 
-        rospy.loginfo("Received 4: Case 4")
-        pub.publish('Stop')
-    elif value == 8:
-        # Gelezen waarde is 8 waarde Noodstop wordt geupload naar topic /Signaal 
-        rospy.loginfo("Received 8: Case 8")
-        pub.publish('Noodstop')
+    if value > 0:
+        if value == 1:
+            # Gelezen waarde is 1 waarde Start wordt geupload naar topic /Signaal 
+            rospy.loginfo("Waarde 1: Start ")
+            pub.publish('Start')
+        elif value == 2:
+            # Gelezen waarde is 2 waarde Start Single wordt geupload naar topic /Signaal 
+            rospy.loginfo("Waarde 2: Start Single")
+            pub.publish('Start Single')
+        elif value == 4:
+            # Gelezen waarde is 4 waarde Stop wordt geupload naar topic /Signaal 
+            rospy.loginfo("Waarde 4: Stop")
+            pub.publish('Stop')
+        elif value == 8:
+            # Gelezen waarde is 8 waarde Noodstop wordt geupload naar topic /Signaal 
+            rospy.loginfo("Waarde 8: Noodstop")
+            pub.publish('Noodstop')
+        else:
+            rospy.logwarn("Onjuiste waarde ontvangen: %d", value)
     else:
-        rospy.logwarn("Received unexpected value: %d", value)
+        pass
 
 def listener():
-    # Initialize the ROS node
+    # Start de ROS node
     rospy.init_node('Knoppen_listener')
     
     # Subscriber op '/avans/buttons/state' met inhoud integer

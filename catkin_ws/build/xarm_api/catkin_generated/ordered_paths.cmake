@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/student/catkin_ws/devel/.private/xarm_sdk/lib;/opt/ros/melodic/lib")

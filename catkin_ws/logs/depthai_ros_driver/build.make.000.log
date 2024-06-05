@@ -1,0 +1,482 @@
+[35m[1mScanning dependencies of target depthai_ros_driver_gencfg[0m
+[  4%] [34m[1mGenerating dynamic reconfigure files from cfg/parameters.cfg: /home/student/catkin_ws/devel/.private/depthai_ros_driver/include/depthai_ros_driver/parametersConfig.h /home/student/catkin_ws/devel/.private/depthai_ros_driver/lib/python2.7/dist-packages/depthai_ros_driver/cfg/parametersConfig.py[0m
+Generating reconfiguration files for parameters in depthai_ros_driver
+Wrote header file in /home/student/catkin_ws/devel/.private/depthai_ros_driver/include/depthai_ros_driver/parametersConfig.h
+[  4%] Built target depthai_ros_driver_gencfg
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[  4%] Built target dynamic_reconfigure_gencfg
+[35m[1mScanning dependencies of target bond_generate_messages_nodejs[0m
+[  4%] Built target bond_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_cpp[0m
+[  4%] Built target bond_generate_messages_cpp
+[35m[1mScanning dependencies of target nodelet_generate_messages_nodejs[0m
+[  4%] Built target nodelet_generate_messages_nodejs
+[35m[1mScanning dependencies of target nodelet_generate_messages_lisp[0m
+[  4%] Built target nodelet_generate_messages_lisp
+[35m[1mScanning dependencies of target nodelet_generate_messages_eus[0m
+[  4%] Built target nodelet_generate_messages_eus
+[35m[1mScanning dependencies of target bond_generate_messages_py[0m
+[  4%] Built target bond_generate_messages_py
+[35m[1mScanning dependencies of target nodelet_generate_messages_cpp[0m
+[  4%] Built target nodelet_generate_messages_cpp
+[35m[1mScanning dependencies of target stereo_msgs_generate_messages_py[0m
+[  4%] Built target stereo_msgs_generate_messages_py
+[35m[1mScanning dependencies of target stereo_msgs_generate_messages_nodejs[0m
+[  4%] Built target stereo_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target stereo_msgs_generate_messages_eus[0m
+[  4%] Built target stereo_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target stereo_msgs_generate_messages_cpp[0m
+[  4%] Built target stereo_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_nodejs[0m
+[  4%] Built target vision_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_eus[0m
+[  4%] Built target vision_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_cpp[0m
+[  4%] Built target vision_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target depthai_ros_msgs_generate_messages_lisp[0m
+[  4%] Built target depthai_ros_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target depthai_ros_msgs_generate_messages_eus[0m
+[  4%] Built target depthai_ros_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target depthai_ros_msgs_generate_messages_cpp[0m
+[  4%] Built target depthai_ros_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[  4%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  4%] Built target sensor_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  4%] Built target sensor_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[  4%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target stereo_msgs_generate_messages_lisp[0m
+[  4%] Built target stereo_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[  4%] Built target geometry_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[  4%] Built target geometry_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[  4%] Built target sensor_msgs_generate_messages_py
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_py[0m
+[  4%] Built target vision_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[  4%] Built target sensor_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  4%] Built target roscpp_generate_messages_cpp
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[  4%] Built target roscpp_generate_messages_py
+[35m[1mScanning dependencies of target vision_msgs_generate_messages_lisp[0m
+[  4%] Built target vision_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target nodelet_generate_messages_py[0m
+[  4%] Built target nodelet_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[  4%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target depthai_ros_msgs_generate_messages_py[0m
+[  4%] Built target depthai_ros_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[  4%] Built target geometry_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_eus[0m
+[  4%] Built target bond_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[  4%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[  4%] Built target sensor_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  4%] Built target std_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  4%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target depthai_ros_msgs_generate_messages_nodejs[0m
+[  4%] Built target depthai_ros_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  4%] Built target rosgraph_msgs_generate_messages_py
+[35m[1mScanning dependencies of target bond_generate_messages_lisp[0m
+[  4%] Built target bond_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  4%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_eus
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  4%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  4%] Built target geometry_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[  4%] Built target roscpp_generate_messages_nodejs
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[  4%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_nodejs
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[  4%] Built target rosgraph_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[  4%] Built target rosgraph_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  4%] Built target rosgraph_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_cpp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[  4%] Built target dynamic_reconfigure_generate_messages_lisp
+[35m[1mScanning dependencies of target depthai_ros_driver[0m
+[  8%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/camera.cpp.o[0m
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:[m[K In member function ‘[01m[Kvoid depthai_ros_driver::Camera::parameterCB(depthai_ros_driver::parametersConfig&, uint32_t)[m[K’:
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:28:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+         device->setIrFloodLightBrightness(floodlightBrighness[01;35m[K)[m[K;
+                                                              [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/depthai/device/Device.hpp:14:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:10[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/camera.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:1[m[K:
+[01m[K/usr/local/include/depthai/device/DeviceBase.hpp:521:83:[m[K [01;36m[Knote: [m[Kdeclared here
+     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:29:68:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+         device->setIrLaserDotProjectorBrightness(laserDotBrightness[01;35m[K)[m[K;
+                                                                    [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/depthai/device/Device.hpp:14:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:10[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/camera.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:1[m[K:
+[01m[K/usr/local/include/depthai/device/DeviceBase.hpp:509:90:[m[K [01;36m[Knote: [m[Kdeclared here
+     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:[m[K In member function ‘[01m[Kvoid depthai_ros_driver::Camera::setIR()[m[K’:
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:177:62:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+         device->setIrFloodLightBrightness(floodlightBrighness[01;35m[K)[m[K;
+                                                              [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/depthai/device/Device.hpp:14:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:10[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/camera.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:1[m[K:
+[01m[K/usr/local/include/depthai/device/DeviceBase.hpp:521:83:[m[K [01;36m[Knote: [m[Kdeclared here
+     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:178:68:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+         device->setIrLaserDotProjectorBrightness(laserDotBrightness[01;35m[K)[m[K;
+                                                                    [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/depthai/device/Device.hpp:14:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:10[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/camera.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/camera.cpp:1[m[K:
+[01m[K/usr/local/include/depthai/device/DeviceBase.hpp:509:90:[m[K [01;36m[Knote: [m[Kdeclared here
+     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 13%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/pipeline_generator.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/sensor_helpers.hpp:6:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:8[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:[m[K In member function ‘[01m[Kstd::vector<std::unique_ptr<depthai_ros_driver::dai_nodes::BaseNode> > depthai_ros_driver::pipeline_gen::PipelineGenerator::createPipeline(ros::NodeHandle, std::shared_ptr<dai::Device>, std::shared_ptr<dai::Pipeline>, const string&, const string&, bool)[m[K’:
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:30:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:30:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:50:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:50:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:73:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:73:121:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto rgb = std::make_unique<dai_nodes::CameraSensor>("rgb", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                                                                                         [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:74:123:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto left = std::make_unique<dai_nodes::CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K);
+                                                                                                                           [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:74:123:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto left = std::make_unique<dai_nodes::CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K);
+                                                                                                                           [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:75:125:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto right = std::make_unique<dai_nodes::CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                                                                                             [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:75:125:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto right = std::make_unique<dai_nodes::CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                                                                                             [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:96:123:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto left = std::make_unique<dai_nodes::CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K);
+                                                                                                                           [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:96:123:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto left = std::make_unique<dai_nodes::CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K);
+                                                                                                                           [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:97:125:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto right = std::make_unique<dai_nodes::CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                                                                                             [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:97:125:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+             auto right = std::make_unique<dai_nodes::CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                                                                                             [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/base_node.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/pipeline_generator.hpp:3[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/pipeline_generator.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[ 17%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/sensors/imu.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/sensors/rgb.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/rgb.hpp:3:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/rgb.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/rgb.cpp:13:66:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+          dai::CameraBoardSocket socket = dai::CameraBoardSocket::[01;35m[KRGB[m[K,
+                                                                  [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/rgb.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/rgb.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/rgb.cpp:13:66:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+          dai::CameraBoardSocket socket = dai::CameraBoardSocket::[01;35m[KRGB[m[K,
+                                                                  [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/rgb.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/rgb.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[ 26%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/sensors/mono.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/mono.hpp:3:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/mono.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[ 30%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/sensors/camera_sensor.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/mono.hpp:3:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/camera_sensor.cpp:4[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[ 34%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/sensors/sensor_helpers.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/sensor_helpers.hpp:6:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/sensors/sensor_helpers.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[ 39%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/stereo.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/stereo.hpp:3:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:[m[K In constructor ‘[01m[Kdepthai_ros_driver::dai_nodes::Stereo::Stereo(const string&, ros::NodeHandle, std::shared_ptr<dai::Pipeline>, std::shared_ptr<dai::Device>)[m[K’:
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:15:99:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     left = std::make_unique<CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K, false);
+                                                                                                   [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/stereo.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:15:99:[m[K [01;35m[Kwarning: [m[K‘[01m[KLEFT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     left = std::make_unique<CameraSensor>("left", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KLEFT[m[K, false);
+                                                                                                   [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/stereo.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:24:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KLEFT[m[K [[deprecated]] = CAM_B,
+     [01;36m[K^~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:16:101:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     right = std::make_unique<CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K, false);
+                                                                                                     [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/stereo.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:16:101:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+     right = std::make_unique<CameraSensor>("right", node, pipeline, device, dai::CameraBoardSocket::[01;35m[KRIGHT[m[K, false);
+                                                                                                     [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/stereo.hpp:4[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/dai_nodes/stereo.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[ 43%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/nn_wrapper.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/spatial_nn_wrapper.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/segmentation.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/mobilenet.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/yolo.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/spatial_mobilenet.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/dai_nodes/nn/spatial_yolo.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/camera_param_handler.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/imu_param_handler.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/nn_param_handler.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/rgb_param_handler.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/sensor_helpers.hpp:6:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/rgb_param_handler.hpp:7[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/rgb_param_handler.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[ 91%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/mono_param_handler.cpp.o[0m
+In file included from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/dai_nodes/sensors/sensor_helpers.hpp:6:0[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/mono_param_handler.hpp:7[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/mono_param_handler.cpp:1[m[K:
+[01m[K/opt/ros/melodic/include/camera_info_manager/camera_info_manager.h:241:2:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K-Wpedantic[m[K]
+ }[01;35m[K;[m[K // namespace camera_info_manager
+  [01;35m[K^[m[K
+[ 95%] [32mBuilding CXX object CMakeFiles/depthai_ros_driver.dir/src/param_handlers/stereo_param_handler.cpp.o[0m
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:[m[K In member function ‘[01m[Kvoid depthai_ros_driver::param_handlers::StereoParamHandler::declareParams(ros::NodeHandle, std::shared_ptr<dai::node::StereoDepth>)[m[K’:
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:36:55:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         stereo->setDepthAlign(dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                       [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/stereo_param_handler.hpp:6[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:36:55:[m[K [01;35m[Kwarning: [m[K‘[01m[KRGB[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         stereo->setDepthAlign(dai::CameraBoardSocket::[01;35m[KRGB[m[K);
+                                                       [01;35m[K^~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/stereo_param_handler.hpp:6[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:22:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRGB[m[K [[deprecated]] = CAM_A,
+     [01;36m[K^~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:38:55:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         stereo->setDepthAlign(dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                       [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/stereo_param_handler.hpp:6[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:38:55:[m[K [01;35m[Kwarning: [m[K‘[01m[KRIGHT[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+         stereo->setDepthAlign(dai::CameraBoardSocket::[01;35m[KRIGHT[m[K);
+                                                       [01;35m[K^~~~~[m[K
+In file included from [01m[K/usr/local/include/depthai/device/CalibrationHandler.hpp:5:0[m[K,
+                 from [01m[K/usr/local/include/depthai/depthai.hpp:9[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/include/depthai_ros_driver/param_handlers/stereo_param_handler.hpp:6[m[K,
+                 from [01m[K/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver/src/param_handlers/stereo_param_handler.cpp:1[m[K:
+[01m[K/usr/local/include/depthai-shared/common/CameraBoardSocket.hpp:25:5:[m[K [01;36m[Knote: [m[Kdeclared here
+     [01;36m[KRIGHT[m[K [[deprecated]] = CAM_C,
+     [01;36m[K^~~~~[m[K
+[100%] [32m[1mLinking CXX shared library /home/student/catkin_ws/devel/.private/depthai_ros_driver/lib/libdepthai_ros_driver.so[0m
+[100%] Built target depthai_ros_driver

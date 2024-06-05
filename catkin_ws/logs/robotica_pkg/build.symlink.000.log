@@ -1,0 +1,3 @@
+Symlinking /home/student/catkin_ws/devel/lib/pkgconfig/robotica_pkg.pc
+Symlinking /home/student/catkin_ws/devel/share/robotica_pkg/cmake/robotica_pkgConfig.cmake
+Symlinking /home/student/catkin_ws/devel/share/robotica_pkg/cmake/robotica_pkgConfig-version.cmake

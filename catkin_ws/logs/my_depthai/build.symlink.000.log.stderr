@@ -1,3 +1,0 @@
-Warning: Cannot symlink from /home/student/catkin_ws/devel/.private/my_depthai/lib/libnodelet_stereo.so to existing file /home/student/catkin_ws/devel/lib/libnodelet_stereo.so
-Warning: Source hash: 5f7d325e822f7edda19d7eac90d998ae
-Warning: Dest hash: 25145b1d5eafbb9a1c53a90562cf7d42

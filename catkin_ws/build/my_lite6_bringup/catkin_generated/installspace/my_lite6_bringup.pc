@@ -1,8 +1,0 @@
-prefix=/home/student/catkin_ws/install
-
-Name: my_lite6_bringup
-Description: Description of my_lite6_bringup
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

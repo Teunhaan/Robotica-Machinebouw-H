@@ -1,0 +1,3 @@
+Symlinking /home/student/catkin_ws/devel/lib/pkgconfig/arduino.pc
+Symlinking /home/student/catkin_ws/devel/share/arduino/cmake/arduinoConfig.cmake
+Symlinking /home/student/catkin_ws/devel/share/arduino/cmake/arduinoConfig-version.cmake

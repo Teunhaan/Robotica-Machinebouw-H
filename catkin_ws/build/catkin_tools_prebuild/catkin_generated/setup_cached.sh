@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+# generated from catkin/python/catkin/environment_cache.py
+
+# based on a snapshot of the environment before and after calling the setup script
+# it emulates the modifications of the setup script without recurring computations
+
+# new environment variables
+
+# modified environment variables
+export CMAKE_PREFIX_PATH="/home/student/catkin_ws/devel/.private/catkin_tools_prebuild:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/opt/ros/melodic/lib:/opt/ros/melodic/lib/x86_64-linux-gnu'
+export PKG_CONFIG_PATH='/opt/ros/melodic/lib/pkgconfig'
+export PWD='/home/student/catkin_ws/build/catkin_tools_prebuild'
+export PYTHONPATH='/opt/ros/melodic/lib/python2.7/dist-packages'
+export ROSLISP_PACKAGE_DIRECTORIES="/home/student/catkin_ws/devel/.private/catkin_tools_prebuild/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH='/home/student/catkin_ws/build/catkin_tools_prebuild:/home/student/catkin_ws/src/arduino:/home/student/catkin_ws/src/xarm_ros/xarm_vision/camera_demo:/home/student/catkin_ws/src/depth-ai-avans/depthai-ros:/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_msgs:/home/student/catkin_ws/src/depth-ai-avans/depthai_bridge:/home/student/catkin_ws/src/depth-ai-avans/depthai_examples:/home/student/catkin_ws/src/depth-ai-avans/depthai_ros_driver:/home/student/catkin_ws/src/xarm_ros/examples/multi_xarm5:/home/student/catkin_ws/src/my_xarm_lite6/my_demo:/home/student/catkin_ws/src/my_xarm_lite6/my_lite6_bringup:/home/student/catkin_ws/src/my_xarm_lite6/my_lite6_description:/home/student/catkin_ws/src/my_xarm_lite6/my_lite6_moveit_config:/home/student/catkin_ws/src/robotica_pkg:/home/student/catkin_ws/src/xarm_ros/examples/xarm7_redundancy_res:/home/student/catkin_ws/src/xarm_ros/xarm_bringup:/home/student/catkin_ws/src/xarm_ros/xarm_description:/home/student/catkin_ws/src/xarm_ros/dual_xarm6_moveit_config:/home/student/catkin_ws/src/xarm_ros/lite6_moveit_config:/home/student/catkin_ws/src/xarm_ros/uf_robot_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm5_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm5_moveit_config:/home/student/catkin_ws/src/xarm_ros/examples/xarm5_vacuum_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm6_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm6_moveit_config:/home/student/catkin_ws/src/xarm_ros/examples/xarm6_vacuum_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm7_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm7_moveit_config:/home/student/catkin_ws/src/xarm_ros/examples/xarm7_vacuum_gripper_moveit_config:/home/student/catkin_ws/src/xarm_ros/xarm_gazebo:/home/student/catkin_ws/src/xarm_ros/xarm_moveit_servo:/home/student/catkin_ws/src/xarm_ros/xarm_msgs:/home/student/catkin_ws/src/xarm_ros/xarm_planner:/home/student/catkin_ws/src/xarm_ros/xarm_sdk:/home/student/catkin_ws/src/xarm_ros/xarm_api:/home/student/catkin_ws/src/xarm_ros/xarm_vision/d435i_xarm_setup:/home/student/catkin_ws/src/xarm_ros/examples/run_recorded_traj:/home/student/catkin_ws/src/xarm_ros/xarm_controller:/home/student/catkin_ws/src/xarm_ros/xarm_gripper:/opt/ros/melodic/share'

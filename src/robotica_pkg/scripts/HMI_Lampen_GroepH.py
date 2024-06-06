@@ -6,22 +6,22 @@ from std_msgs.msg import UInt8, String
 def callback(data):
     pub = rospy.Publisher('/avans/leds/state', UInt8,  queue_size=1)
     value = data.data
-    if value == "Start":
-        # Gelezen waarde is Start upload 1000 
-        rospy.loginfo("Start signaal ontvangen")
-        pub.publish(1)
-    elif value == "Start Single":
-        # Gelezen waarde is Start Single upload 0100
-        rospy.loginfo("Start Single signaal ontvangen")
-        pub.publish(2)
-    elif value == "Stop":
-        # Gelezen waarde is Stop upload 0010
-        rospy.loginfo("Stop signaal ontvangen")
+    if value == "Groen":
+        # Gelezen waarde is Groen upload 00010 
+        rospy.loginfo("Groen signaal ontvangen")
+        pub.publish(32)
+    elif value == "Geel":
+        # Gelezen waarde is Geel upload 00100
+        rospy.loginfo("Geel Single signaal ontvangen")
         pub.publish(4)
-    elif value == "Noodstop":
-        # Gelezen waarde is Noodstop upload 0001
-        rospy.loginfo("Noodstop signaal ontvangen")
+    elif value == "Rood":
+        # Gelezen waarde is Rood upload 01000
+        rospy.loginfo("Rood signaal ontvangen")
         pub.publish(8)
+    elif value == "Piep":
+        # Gelezen waarde is Piep upload 10000
+        rospy.loginfo("Piep signaal ontvangen")
+        pub.publish(16)
     else:
         rospy.logwarn("Received unexpected value: %s", value)
 

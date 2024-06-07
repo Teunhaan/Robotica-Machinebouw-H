@@ -19,10 +19,6 @@ def callback(data):
             # Gelezen waarde is 4 waarde Stop wordt geupload naar topic /Signaal 
             rospy.loginfo("Waarde 4: Stop")
             pub.publish('Stop')
-        elif value == 8:
-            # Gelezen waarde is 8 waarde Noodstop wordt geupload naar topic /Signaal 
-            rospy.loginfo("Waarde 8: Noodstop")
-            pub.publish('Noodstop')
         else:
             rospy.logwarn("Onjuiste waarde ontvangen: %d", value)
     else:

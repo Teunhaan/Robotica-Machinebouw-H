@@ -1,7 +1,21 @@
 <launch>
+    <!-- Launch van arduino-->
     <node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
     <param name="port"              type="string"               value="/dev/ttyACM0"/>
     <param name="baud"              type="int"                  value="57600"/>
     </node>
-    <node name="HMI_Programma_GroepH" pkg="" type="HMI_Programma_GroepH.py"/>
+
+    <!-- Launch van HMI-->
+    <node name="HMI_Lampen_GroepH" pkg="robotica_pkg" type="HMI_Lampen_GroepH.py"/>
+    <node name="HMI_Knoppen_GroepH" pkg="robotica_pkg" type="HMI_Knoppen_GroepH.py"/>
+
+    <!-- Launch van Robot-->
+    <node name="ROBOT_GroepH" pkg="robotica_pkg" type="ROBOT_GroepH.py"/>
+	    <include file="$(find my_demo)/launch/environment.launch">
+        </include>
+
+    <!-- Launch van DepthAI-->
+    <include file="$(find my_depthai)/launch/nn_detector.launch">
+       <arg name="parent_frame"    value="camera_link"/>
+    </include>
 </launch>

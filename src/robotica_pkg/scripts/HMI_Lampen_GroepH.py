@@ -10,19 +10,19 @@ def callback(data):
     # Poort D01 op de arduino werkt niet naar behoren dus er wordt begonnen op poort D02
 
     if value == "Geel":
-        # Gelezen waarde is Geel upload 00100
+        # Gelezen waarde is Geel upload 000100
         rospy.loginfo("Geel Single signaal ontvangen")
         pub.publish(4)
     elif value == "Rood":
-        # Gelezen waarde is Rood upload 01000
+        # Gelezen waarde is Rood upload 001000
         rospy.loginfo("Rood signaal ontvangen")
         pub.publish(8)
     elif value == "Piep":
-        # Gelezen waarde is Piep upload 10000
+        # Gelezen waarde is Piep upload 010000
         rospy.loginfo("Piep signaal ontvangen")
         pub.publish(16)
     elif value == "Groen":
-        # Gelezen waarde is Groen upload 00010 
+        # Gelezen waarde is Groen upload 100000 
         rospy.loginfo("Groen signaal ontvangen")
         pub.publish(32)
     else:

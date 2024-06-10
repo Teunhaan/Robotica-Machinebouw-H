@@ -4,6 +4,7 @@ import rospy
 from std_msgs.msg import UInt8, String
 
 def callback(data):
+    #Publisher aanmaken naar de juiste locatie voor rosserial.
     pub = rospy.Publisher('/avans/leds/state', UInt8,  queue_size=1)
     value = data.data
 
@@ -25,6 +26,8 @@ def callback(data):
         # Gelezen waarde is Fout upload 001000
         rospy.loginfo("Fout signaal ontvangen")
         pub.publish(8)
+
+    # Buiten de opdracht nog mogelijk te gebruiken
     elif value == "Piep":
         # Gelezen waarde is Piep upload 010000
         rospy.loginfo("Piep signaal ontvangen")
@@ -40,7 +43,7 @@ def listener():
     # Start ros node
     rospy.init_node('Lampen_listener')
     
-    # Subscriber op '/Signaal' met inhoud string
+    # Subscriber op '/Lampen' met inhoud string
     rospy.Subscriber('/Lampen', String, callback)
     
     # Keep the node running

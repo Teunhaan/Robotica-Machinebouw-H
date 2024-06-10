@@ -21,7 +21,7 @@ def callback(data):
     elif value == "Storing":
         # Gelezen waarde is Storing upload 100100
         rospy.loginfo("Storing signaal ontvangen")
-        pub.publish(16)
+        pub.publish(36)
     elif value == "Fout":
         # Gelezen waarde is Fout upload 001000
         rospy.loginfo("Fout signaal ontvangen")

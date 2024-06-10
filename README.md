@@ -4,8 +4,19 @@ Handleiding en commentaar voor code Periode 2.4 Robotica in de Machinebouw.
 **Arduino:**
 Communicatie:
 /Signaal
+Start
+StartCyclus
+Stop
 
-/Lampen
+/Lampen:
+WachtOpStart
+InBedrijf
+Fout
+Storing
+
+*BONUS*
+Piep
+Noodstop
 
 Voor de installatie van de arduino met linux/ROS:
 https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/EcvqOJ_AaCBBpeAs9AySBakBoot705q47F-Zxn9xOW7k-A?e=XZNjJb

@@ -9,12 +9,12 @@ def callback(data):
     if value > 0:
         if value == 1:
             # Gelezen waarde is 1 waarde Start wordt geupload naar topic /Signaal 
-            rospy.loginfo("Waarde 1: Start ")
+            rospy.loginfo("Waarde 1: Start")
             pub.publish('Start')
         elif value == 2:
             # Gelezen waarde is 2 waarde Start Single wordt geupload naar topic /Signaal 
-            rospy.loginfo("Waarde 2: Start Single")
-            pub.publish('Start Single')
+            rospy.loginfo("Waarde 2: Start Cyclus")
+            pub.publish('StartCyclus')
         elif value == 4:
             # Gelezen waarde is 4 waarde Stop wordt geupload naar topic /Signaal 
             rospy.loginfo("Waarde 4: Stop")

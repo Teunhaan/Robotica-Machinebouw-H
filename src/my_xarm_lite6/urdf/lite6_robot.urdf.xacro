@@ -209,55 +209,53 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+<!-- 		Camera definieren 		-->
+
 <link name="camera_base_link">
-    <visual>
-      <origin xyz="0.0 0.0 0.39"/>
-      <geometry>
-        <box size="0.03 0.03 0.78"/>
-      </geometry>
-	<material name="LightGrey"/>
-    </visual>
-  </link>
- 
-  <joint name="camera_base_joint" type="fixed">
-    <origin xyz="-0.03 0.65 0.0"/>
-    <parent link="world"/>
-    <child link="camera_base_link"/>
-  </joint>
- 
- 
- 
-<link name="camera_top_link">
-      <visual>
-      <origin xyz="-0.25 0.0 0.015"/>
-      <geometry>
-        <box size="0.5 0.03 0.03"/>
-      </geometry>
-	<material name="LightGrey"/>
-    </visual>
-  </link>
- 
-  <joint name="camera_top_link_joint" type="fixed">
-    <origin xyz="0.135 0 0.78"/>
-    <parent link="camera_base_link"/>
-    <child link="camera_top_link"/>
-  </joint>
+        <visual>
+            <origin xyz="0.0 0.0 0.39"/>
+            <geometry>
+                <box size="0.03 0.03 0.78"/>
+            </geometry>
+            <material name="LightGrey"/>
+        </visual>
+    </link>
+  
+    <joint name="camera_base_joint" type="fixed">
+        <origin xyz="-0.03 0.65 0.0"/>
+        <parent link="world"/>
+        <child link="camera_base_link"/>
+    </joint>
+    
+    <link name="camera_top_link">
+        <visual>
+            <origin xyz="-0.25 0.0 0.015"/>
+            <geometry>
+                <box size="0.5 0.03 0.03"/>
+            </geometry>
+            <material name="LightGrey"/>
+        </visual>
+    </link>
+  
+    <joint name="camera_top_link_joint" type="fixed">
+        <origin xyz="0.135 0 0.78"/>
+        <parent link="camera_base_link"/>
+        <child link="camera_top_link"/>
+    </joint>
 
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-<link name="camera_link">
+  <link name="camera_link">
     <visual>
-      <origin xyz="-0.055 0.0 -0.02 " />
+      <origin xyz="-0.055 0.0 -0.2" />
       <geometry>
-        <box size="0.11 0.03 0.04" />
+        <box size="0.0 0.0 0.0"/>
       </geometry>
-      <material name="test"/>
+      <material name="LightGrey"/>
     </visual>
   </link>
 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="-0.39 0.0 0" />
-    <parent link="camera_top_link" />
+    <origin xyz="-0.305 0.64 0.76" rpy="1.53 1.53 3.1415" />
+    <parent link="world" />
     <child link="camera_link" />
   </joint>
 

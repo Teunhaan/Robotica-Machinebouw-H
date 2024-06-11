@@ -35,10 +35,12 @@ https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/EU5BhHd7MQ
 
 
 Topic:
-/move_group/display_planned_path
+/move_group/display_planned_path                            Laat de geplande pad van de robot zien
+/Signaal                                                    Ontvangt signaal van de verschillende knoppen
+/Lampen                                                     Stuurt signaal naar arduino om lampen en/of geluid aan te sturen
 
-service:
-/ufactory/vacuum_gripper_set
+Service:
+/ufactory/vacuum_gripper_set                                Gripper open/sluiten met een 0 of 1
 
 Node: 
 

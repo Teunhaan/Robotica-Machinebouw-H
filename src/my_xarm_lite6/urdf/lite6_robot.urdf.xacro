@@ -209,8 +209,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-<!-- 		Camera definieren 		-->
-
 <link name="camera_base_link">
         <visual>
             <origin xyz="0.0 0.0 0.39"/>
@@ -258,6 +256,7 @@
     <parent link="world" />
     <child link="camera_link" />
   </joint>
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -476,8 +475,6 @@
     <parent link="cylinder_link" />
     <child link="gripper_link" />
   </joint>
-
-
 
 
 </robot>

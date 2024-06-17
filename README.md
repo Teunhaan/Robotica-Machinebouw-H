@@ -8,7 +8,7 @@ Start
 StartCyclus
 Stop
 
-/Lampen:
+rosservice call /lampen "......"
 WachtOpStart
 InBedrijf
 Fout
@@ -29,6 +29,8 @@ https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/Ec2HpCpVXi
 Voor installatie van de Robot
 https://avans.sharepoint.com/:w:/s/AEI-ROS-Robot-Operating-System0841/EU5BhHd7MQ9OhqBt5MU01GYBWvODwn5Ksggk1Jgt9Bv_Rg?e=gdMnOT
 
+**Camera**
+rosservice call /lokalisatie ""
 
 
 # Manipulator

@@ -2,9 +2,9 @@
 
 import rospy
 from std_msgs.msg import UInt8, String
+from robotica_pkg.srv import lampen, lampenResponse
 
 def callback(data):
-    #Publisher aanmaken naar de juiste locatie voor rosserial.
     pub = rospy.Publisher('/avans/leds/state', UInt8,  queue_size=1)
     value = data.data
 
@@ -12,45 +12,45 @@ def callback(data):
 
     if value == "WachtOpStart":
         # Gelezen waarde is WachtOpStart upload 100000
-        rospy.loginfo("WachtOpStart signaal ontvangen")
+        print("WachtOpStart signaal ontvangen")
         pub.publish(32)
     elif value == "InBedrijf":
         # Gelezen waarde is Rood upload 000100
-        rospy.loginfo("InBedrijf signaal ontvangen")
+        print("InBedrijf signaal ontvangen")
         pub.publish(4)
     elif value == "Storing":
         # Gelezen waarde is Storing upload 100100
-        rospy.loginfo("Storing signaal ontvangen")
+        print("Storing signaal ontvangen")
         pub.publish(36)
     elif value == "Fout":
         # Gelezen waarde is Fout upload 001000
-        rospy.loginfo("Fout signaal ontvangen")
+        print("Fout signaal ontvangen")
         pub.publish(8)
-
-    # Buiten de opdracht nog mogelijk te gebruiken
     elif value == "Piep":
         # Gelezen waarde is Piep upload 010000
-        rospy.loginfo("Piep signaal ontvangen")
+        print("Piep signaal ontvangen")
         pub.publish(16)
     elif value == "Noodstop":
         # Gelezen waarde is Noodstop upload 011000 
-        rospy.loginfo("Noodstop signaal ontvangen")
+        print("Noodstop signaal ontvangen")
         pub.publish(24)
     else:
-        rospy.logwarn("Received unexpected value: %s", value)
+        print("Received unexpected value: %s", value)
 
-def listener():
-    # Start ros node
+    return lampenResponse('Uploaden is voltooid')
+
+def lampen_server():
+    # Start ROS node
     rospy.init_node('Lampen_listener')
     
-    # Subscriber op '/Lampen' met inhoud string
-    rospy.Subscriber('/Lampen', String, callback)
+    rospy.Service('Lampen', lampen, callback)
+    rospy.loginfo("Ready to compute.")
     
     # Keep the node running
     rospy.spin()
 
 if __name__ == '__main__':
     try:
-        listener()
+        lampen_server()
     except rospy.ROSInterruptException:
         pass

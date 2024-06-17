@@ -32,15 +32,15 @@
     <arg name="confidence"            default="200" />
     <arg name="LRchecktresh"          default="5"   />
 
-    <!-- <arg name="monoResolution"        default="720p"/> -->
+    <arg name="monoResolution"        default="720p"/>
 
-    <arg name="monoResolution"        default="400p"/>
+    <!-- <arg name="monoResolution"        default="400p"/> -->
 
     <arg name="rgbResolution"           default="1080p"/>
     <arg name="rgbScaleNumerator"       default="2"/>
     <arg name="rgbScaleDinominator"     default="3"/>
-    <arg name="previewWidth"            default="416"/>
-    <arg name="previewHeight"           default="416"/>
+    <arg name="previewWidth"            default="640"/>
+    <arg name="previewHeight"           default="640"/>
 
     <arg name="angularVelCovariance"  default="0"   />
     <arg name="linearAccelCovariance" default="0"   />
@@ -57,8 +57,8 @@
     <arg name="yoloPyTorch"            default="true"/>
 
     <!-- Network trainded by pyTorch -->
-    <arg name="nnName"                 default="OraleHygiene_product_detectie_v1_oralehyhiene_v1_yolov5pytorch_openvino_2022.1_6shave.blob" if="$(eval arg('yoloPyTorch') == true)"      />
-    <arg name="nnConfig"               default="OraleHygiene_product_detectie_v1_oralehyhiene_v1_yolov5pytorch.json" if="$(eval arg('yoloPyTorch') == true)"       />
+    <arg name="nnName"                 default="Tandenborstels-v2_openvino_2022.1_5shave.blob" if="$(eval arg('yoloPyTorch') == true)"      />
+    <arg name="nnConfig"               default="Tandenborstels-v2.json" if="$(eval arg('yoloPyTorch') == true)"       />
 
     <!-- network trainded by Roboflow 
     <arg name="nnName"                 default="simplefruits_V1.blob"  unless="$(eval arg('yoloPyTorch') == true)"       />

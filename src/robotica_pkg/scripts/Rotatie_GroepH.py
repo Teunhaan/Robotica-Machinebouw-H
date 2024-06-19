@@ -40,7 +40,7 @@ class ImageProcessor:
     def process_image(self, img):
         x, y, w, h = self.roi
         img_roi = img[y:y+h, x:x+w]
-        imgscale = cv2.resize(img_roi, (0, 0), fx=0.2, fy=0.2)
+        imgscale = cv2.resize(img_roi, (0, 0), fx=2, fy=2)
         imgBlur = cv2.GaussianBlur(imgscale, (15, 15), 5)
         imgCanny = cv2.Canny(imgBlur, 25, 75)
         kernel_Dil = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))

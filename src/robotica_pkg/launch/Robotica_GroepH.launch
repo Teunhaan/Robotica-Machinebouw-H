@@ -10,12 +10,16 @@
     <node name="HMI_Knoppen_GroepH" pkg="robotica_pkg" type="HMI_Knoppen_GroepH.py"/>
 
     <!-- Launch van Robot-->
-    <node name="ROBOT_GroepH" pkg="robotica_pkg" type="ROBOT_GroepH.py"/>
-	    <include file="$(find my_demo)/launch/environment.launch">
-        </include>
+    <!--<node name="ROBOT_GroepH" pkg="robotica_pkg" type="ROBOT_GroepH.py"/>-->
+	<include file="$(find my_lite6_moveit_config)/launch/realMove_exec.launch">
+      <arg name="robot_ip" value="192.168.1.150" />
+    </include>
 
     <!-- Launch van DepthAI-->
     <include file="$(find my_depthai)/launch/nn_detector.launch">
        <arg name="parent_frame"    value="camera_link"/>
     </include>
+
+	<node name="Transformatie_GroepH" pkg="robotica_pkg" type="Transformatie_GroepH.py"/>
+    <node name="Rotatie_GroepH" pkg="robotica_pkg" type="Rotatie_GroepH.py"/>
 </launch>

@@ -16,7 +16,7 @@ def lokalisatie_detectie(req):
 
     if not data.detections:
         rospy.loginfo("Geen detecties gevonden.")
-        return lokalisatieResponse(Xw=0, Yw=0, Zw=0)
+        return lokalisatieResponse(Xw=0, Yw=0, Zw=0, Naam="")
 
     eerste_detectie = data.detections[0]
     eerste_resultaat_id = eerste_detectie.results[0].id
@@ -24,19 +24,22 @@ def lokalisatie_detectie(req):
     if eerste_resultaat_id == 0:
         rospy.loginfo("Resultaat van de herkenning is: Colgate")
         item = "Colgate_0"
+        naam = "Colgate"
     elif eerste_resultaat_id == 1:
         rospy.loginfo("Resultaat van de herkenning is: Elektrisch")
         item = "Elektrisch_0"
+        naam = "Elektrisch"
     elif eerste_resultaat_id == 2:
         rospy.loginfo("Resultaat van de herkenning is: PepaPig")
         item = "PepaPig_0"
+        naam = "PepaPig"
     elif eerste_resultaat_id == 3:
         rospy.loginfo("Resultaat van de herkenning is: TongBorstel")
         item = "TongBorstel_0"
+        naam = "TongBorstel"
     else:
         rospy.logwarn("Received unexpected value: %i", eerste_resultaat_id)
-        return lokalisatieResponse(Xw=0, Yw=0, Zw=0)
-        
+        return lokalisatieResponse(Xw=0, Yw=0, Zw=0, Naam="")
 
     # Start waarde met een '/' als TF.
     item = "/" + item
@@ -48,9 +51,9 @@ def lokalisatie_detectie(req):
         rospy.loginfo("Translation: %s", str(trans))
     except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as e:
         rospy.logerr("TF fout: %s", str(e))
-        return lokalisatieResponse(Xw=0, Yw=0, Zw=0)
+        return lokalisatieResponse(Xw=0, Yw=0, Zw=0, Naam=naam)
 
-    return lokalisatieResponse(Xw=trans[0],Yw=trans[1],Zw=0.03)
+    return lokalisatieResponse(Xw=trans[0], Yw=trans[1], Zw=0.03, Naam=naam)
 
 def listener_node():
     global listener, service

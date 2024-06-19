@@ -31,8 +31,8 @@ def lokalisatie_detectie(req):
         naam = "Elektrisch"
     elif eerste_resultaat_id == 2:
         rospy.loginfo("Resultaat van de herkenning is: PepaPig")
-        item = "PepaPig_0"
-        naam = "PepaPig"
+        item = "PeppaPig_0"
+        naam = "PeppaPig"
     elif eerste_resultaat_id == 3:
         rospy.loginfo("Resultaat van de herkenning is: TongBorstel")
         item = "TongBorstel_0"

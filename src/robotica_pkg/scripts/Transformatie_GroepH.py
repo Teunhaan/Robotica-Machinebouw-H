@@ -7,10 +7,9 @@ from depthai_ros_msgs.msg import SpatialDetectionArray
 from robotica_pkg.srv import lokalisatie, lokalisatieResponse
 
 listener = None
-service = None  # Define a global variable to hold the service object
 
 def lokalisatie_detectie(req):
-    global listener, service
+    global listener
     
     data = rospy.wait_for_message("/stereo_inertial_nn_publisher/color/detections", SpatialDetectionArray)
 
@@ -56,11 +55,11 @@ def lokalisatie_detectie(req):
     return lokalisatieResponse(Xw=trans[0], Yw=trans[1], Zw=0.03, Naam=naam)
 
 def listener_node():
-    global listener, service
+    global listener
     rospy.init_node('lokalisatie_camera')
     listener = tf.TransformListener()
     
-    service = rospy.Service('lokalisatie', lokalisatie, lokalisatie_detectie)
+    rospy.Service('lokalisatie', lokalisatie, lokalisatie_detectie)
     rospy.spin()
 
 if __name__ == '__main__':

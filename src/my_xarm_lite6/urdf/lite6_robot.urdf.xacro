@@ -194,10 +194,25 @@
 <collision>
       <origin xyz="-0.15 0 0.1"/>
       <geometry>
-        <box size="0.30 0.06 0.22"/>
+        <box size="0.30 0.02 0.20"/>
       </geometry>
     </collision>
   </link>
+
+  <link name="muur_toren_link">
+    <collision>
+      <origin xyz="-0.15 0 0.1"/>
+      <geometry>
+        <box size="0.01 0.01 0.90"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="muur_toren_joint" type="fixed">
+    <origin xyz="0.05 0.39 0" />
+    <parent link="world" />
+    <child link="muur_toren_link" />
+  </joint>
 
   <joint name="muur_joint" type="fixed">
     <origin xyz="-0.07 0.39 0" />
@@ -447,7 +462,7 @@
 <link name="cylinder_link">
     <visual>
       <geometry>
-        <cylinder radius="0.0375" length="0.045"/>
+        <cylinder radius="0.0370" length="0.045"/>
       </geometry>
       <material name="test"/>
     </visual>
@@ -468,13 +483,15 @@
       </geometry>
       <material name="test"/>
     </visual>
+  </link>
+
+<link name="borstel_link">
     <visual>
       <geometry>
-        <box size="0.19 0.02 0.02" />
+        <box size="0.19 0.02 0.01" />
       </geometry>
-      <material name="blue"/>
+      <material name="test"/>
     </visual>
-
   </link>
 
 
@@ -484,7 +501,12 @@
     <child link="gripper_link" />
   </joint>
 
+<joint name="borstel" type="fixed">
+    <origin xyz="0.0 0.0 0.04" />
+    <parent link="cylinder_link" />
+    <child link="borstel_link" />
+  </joint>
+
 
 </robot>
  
-

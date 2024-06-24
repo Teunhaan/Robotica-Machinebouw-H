@@ -494,6 +494,15 @@
     </visual>
   </link>
 
+<link name="kabel_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.06 0.015" />
+      </geometry>
+      <material name="test"/>
+    </visual>
+  </link>
+
 
 <joint name="gripper" type="fixed">
     <origin xyz="0.0 0.0 0.025" />
@@ -505,6 +514,12 @@
     <origin xyz="0.0 0.0 0.04" />
     <parent link="cylinder_link" />
     <child link="borstel_link" />
+  </joint>
+
+<joint name="kabel" type="fixed">
+    <origin xyz="0.0 0.04 -0.03" />
+    <parent link="cylinder_link" />
+    <child link="kabel_link" />
   </joint>
 
 

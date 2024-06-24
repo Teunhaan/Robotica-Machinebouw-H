@@ -32,10 +32,11 @@ robot = moveit_commander.RobotCommander()
 group = moveit_commander.MoveGroupCommander('arm')
 
 # Set speed limits
-group.set_max_velocity_scaling_factor(0.8)
-group.set_max_acceleration_scaling_factor(0.8)
+group.set_max_velocity_scaling_factor(0.1)
+group.set_max_acceleration_scaling_factor(0.1)
 
 def open_gripper():
+    time.sleep(1)
     try:
         rospy.wait_for_service('/ufactory/vacuum_gripper_set', timeout=5)
         vacuum_gripper_set_proxy = rospy.ServiceProxy('/ufactory/vacuum_gripper_set', SetInt16)
@@ -55,6 +56,7 @@ def close_gripper():
         request.data = 1  
         response = vacuum_gripper_set_proxy(request)
         rospy.loginfo("Gripper service response: %s", response)
+        time.sleep(1)
     except rospy.ServiceException as e:
         set_lampen_status('Fout')
         rospy.logerr("Failed to call gripper service: %s", e)
@@ -62,20 +64,29 @@ def close_gripper():
 def signal_callback(data):
     global operation_in_progress, repeat_limit, repeat_count, stop_requested, detection_count
 
-    if data.data in ["Start", "StartCyclus"]:
+    if operation_in_progress == False:
+      move_to_named_target("home")
+
+    if data.data in ["Start", "StartCyclus"] and not operation_in_progress:
+        
         repeat_limit = 1 if data.data == "Start" else detection_count
         repeat_count = 0
         stop_requested = False
         rospy.loginfo("Start signal received. Beginning the action...")
 
-        if not operation_in_progress:
+        
+        if not operation_in_progress and not detection_count == 0:
             operation_in_progress = True
             threading.Thread(target=perform_movements).start()
             set_lampen_status('InBedrijf')
+        else:
+            set_lampen_status('Storing')
+
 
     elif data.data == "Stop":
         stop_requested = True
         rospy.loginfo("Stop signal received. Stopping operation...")
+
 
 def perform_movements():
     global repeat_count, stop_requested, operation_in_progress
@@ -87,29 +98,35 @@ def perform_movements():
 
         X, Y, Z, Naam = get_localisation_data()
 
-    
-        if X is None:
-            break
-
         angle = get_angle_data()
-        if angle is None:
+        if X is None or Y is None or angle is None:
+            set_lampen_status('Fout')
+            return
+        
+        if not pick_up_product(X, Y, 0.15, angle):
             break
-
-        rospy.loginfo("Picking up product")
-        pick_up_product(X, Y, 0.15, angle)
+    
 
         if Naam == "Colgate":
             rospy.loginfo('Moving to bottom right...')
-            place_product(-0.31, 0.25, 0.045)
+            if not place_product(-0.307, 0.25, 0.045):
+                break
+
         elif Naam == "Elektrisch":
             rospy.loginfo('Moving to top right...')
-            place_product(-0.31, 0.15, 0.13)
+            if not place_product(-0.307, 0.15, 0.13):
+                break
+
         elif Naam == "PeppaPig":
             rospy.loginfo('Moving to top left...')
-            place_product(-0.2, 0.15, 0.13)
+            if not place_product(-0.2, 0.15, 0.13):
+                break
+
         elif Naam == "TongBorstel":
             rospy.loginfo('Moving to bottom left...')
-            place_product(-0.2, 0.25, 0.045)
+            if not place_product(-0.2, 0.25, 0.045):
+                break
+            
 
         rospy.loginfo("Going back to home position")
         move_to_named_target("home")
@@ -138,7 +155,7 @@ def get_localisation_data():
     except rospy.ServiceException as e:
         rospy.logerr("Failed to call localisation service: %s", e)
         print ("Storing")
-        set_lampen_status('Storing')
+        set_lampen_status('Fout')
         return None, None, None, None
 
 def get_angle_data():
@@ -153,10 +170,11 @@ def get_angle_data():
         return None
 
 def pick_up_product(x, y, z, angle):
+    global stop_requested
 
     pose_target = group.get_current_pose().pose
     pose_target.position.x = x
-    pose_target.position.y = y + 0.017
+    pose_target.position.y = y + 0.015
     pose_target.position.z = z + 0.06
 
     graden = angle
@@ -179,21 +197,41 @@ def pick_up_product(x, y, z, angle):
     pose_target.orientation.w = combined_quat[3]
 
     group.set_pose_target(pose_target)
-    group.go(wait=True)
+    
+    success = group.go(wait=True)
+    if not success:
+        set_lampen_status('Fout')
+        rospy.logerr("Motion planning or execution failed while picking up the product.")
+        if stop_requested == True:
+            return False
 
-    pose_target.position.z = z - 0.082
+    pose_target.position.z = z - 0.08
     group.set_pose_target(pose_target)
-    group.go(wait=True)
 
-    time.sleep(3)
-    close_gripper()
+    success = group.go(wait=True)
+    if not success:
+        set_lampen_status('Fout')
+        rospy.logerr("Motion planning or execution failed while picking up the product.")
+        if stop_requested == True:
+            return False
+
     time.sleep(1)
+    close_gripper()
 
-    pose_target.position.z = z + 0.082
+    pose_target.position.z = z + 0.08
     group.set_pose_target(pose_target)
-    group.go(wait=True)
+    success = group.go(wait=True)
+    if not success:
+        set_lampen_status('Fout')
+        rospy.logerr("Motion planning or execution failed while picking up the product.")
+        if stop_requested == True:
+            return False
+
+    return True
 
 def place_product(x, y, z):
+    global stop_requested
+
     pose_target = group.get_current_pose().pose
     pose_target.position.x = x
     pose_target.position.y = y
@@ -208,45 +246,63 @@ def place_product(x, y, z):
     pose_target.orientation.w = new_quat[3]
 
     group.set_pose_target(pose_target)
-    group.go(wait=True)
+    success = group.go(wait=True)
+    if not success:
+        set_lampen_status('Fout')
+        rospy.logerr("Motion planning or execution failed while placing the product.")
+        if stop_requested == True:
+            return False
+
 
     pose_target.position.y = y - 0.07
+
     group.set_pose_target(pose_target)
-    group.go(wait=True)
+    success = group.go(wait=True)
+    if not success:
+        set_lampen_status('Fout')
+        rospy.logerr("Motion planning or execution failed while placing the product.")
+        if stop_requested == True:
+            return False
 
     open_gripper()
-    time.sleep(1)
 
-    pose_target.position.y = y + 0.07
-    group.set_pose_target(pose_target)
-    group.go(wait=True)
+    return True
 
-def set_lampen_status(status):
-    try:
-        lampen_service = rospy.ServiceProxy('Lampen', lampen)
-        request = lampenRequest(status)
+def set_lampen_status(waarde):
+        lampen_service = rospy.ServiceProxy('/Lampen', lampen)
+        # Maak een verzoek aan de service
+        request = lampenRequest(waarde)
         response = lampen_service(request)
-        rospy.loginfo("Lampen service response: %s", response)
-    except rospy.ServiceException as e:
-        rospy.logerr("Failed to call lampen service: %s", e)
+
 
 def detection_callback(msg):
-    global detection_count
-    detection_count.unregister()
-    detection_count = 0
+    global detection_count  # Voeg deze regel toe
+
+    # Gebruik niet langer detection_count.unregister() hier
+
     detection_count = len(msg.detections)
-    rospy.loginfo("Aantal detecties: %d" % detection_count)
     return
+
+
+    
+
 
 if __name__ == '__main__':
     try:
-        detection_count = rospy.Subscriber('/stereo_inertial_nn_publisher/color/detections', SpatialDetectionArray, detection_callback)
+        
+        set_lampen_status('WachtOpStart')
+        
+        try:
+            rospy.Subscriber('/stereo_inertial_nn_publisher/color/detections', SpatialDetectionArray, detection_callback)
+        except rospy.ROSException as e:
+            set_lampen_status('Fout')
+            rospy.logerr("Service is not available within the timeout: %s", e)
+            
         rospy.Subscriber('/Signaal', String, signal_callback)
-        time.sleep(1)
         rospy.loginfo('Ready to receive signals...')
         rospy.spin()
+
     except rospy.ROSInterruptException:
         set_lampen_status('Fout')
-
 
 

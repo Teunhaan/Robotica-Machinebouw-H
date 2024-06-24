@@ -13,6 +13,7 @@ from robotica_pkg.srv import lokalisatie, lokalisatieRequest, GetAngle, GetAngle
 from tf.transformations import quaternion_from_euler, euler_from_quaternion
 import tf
 from depthai_ros_msgs.msg import SpatialDetectionArray
+from xarm_msgs.msg import RobotMsg
 
 # Global variables
 operation_in_progress = False
@@ -283,7 +284,10 @@ def detection_callback(msg):
     detection_count = len(msg.detections)
     return
 
-
+def Noodstop_callback(msg):
+    if msg.state == 4:
+        rospy.logerr("Noodstop is ingedrukt")
+        set_lampen_status('Noodstop')
     
 
 
@@ -297,12 +301,13 @@ if __name__ == '__main__':
         except rospy.ROSException as e:
             set_lampen_status('Fout')
             rospy.logerr("Service is not available within the timeout: %s", e)
-            
+        
+        rospy.Subscriber('/ufactory/robot_states', RobotMsg, Noodstop_callback)
+
         rospy.Subscriber('/Signaal', String, signal_callback)
         rospy.loginfo('Ready to receive signals...')
         rospy.spin()
 
     except rospy.ROSInterruptException:
         set_lampen_status('Fout')
-
 

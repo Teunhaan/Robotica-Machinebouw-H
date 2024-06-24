@@ -199,21 +199,6 @@
     </collision>
   </link>
 
-  <link name="muur_toren_link">
-    <collision>
-      <origin xyz="-0.15 0 0.1"/>
-      <geometry>
-        <box size="0.01 0.01 0.90"/>
-      </geometry>
-    </collision>
-  </link>
-
-  <joint name="muur_toren_joint" type="fixed">
-    <origin xyz="0.05 0.39 0" />
-    <parent link="world" />
-    <child link="muur_toren_link" />
-  </joint>
-
   <joint name="muur_joint" type="fixed">
     <origin xyz="-0.07 0.39 0" />
     <parent link="world" />

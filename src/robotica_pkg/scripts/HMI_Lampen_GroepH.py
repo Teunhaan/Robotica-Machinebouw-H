@@ -15,11 +15,11 @@ def callback(data):
         print("WachtOpStart signaal ontvangen")
         pub.publish(32)
     elif value == "InBedrijf":
-        # Gelezen waarde is Rood upload 000100
+        # Gelezen waarde is Rood upload 001000
         print("InBedrijf signaal ontvangen")
         pub.publish(16)
     elif value == "Storing":
-        # Gelezen waarde is Storing upload 100100
+        # Gelezen waarde is Storing upload 110000
         print("Storing signaal ontvangen")
         pub.publish(48)
     elif value == "Fout":
@@ -27,13 +27,13 @@ def callback(data):
         print("Fout signaal ontvangen")
         pub.publish(8)
     elif value == "Piep":
-        # Gelezen waarde is Piep upload 010000
+        # Gelezen waarde is Piep upload 000100
         print("Piep signaal ontvangen")
-        pub.publish(16)
+        pub.publish(4)
     elif value == "Noodstop":
-        # Gelezen waarde is Noodstop upload 011000 
+        # Gelezen waarde is Noodstop upload 001100 
         print("Noodstop signaal ontvangen")
-        pub.publish(24)
+        pub.publish(56)
     else:
         print("Received unexpected value: %s", value)
 

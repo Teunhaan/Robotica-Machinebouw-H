@@ -33,6 +33,7 @@ class SignalPublisher:
         elif value == 0:
             self.last_value = None
 
+
     def listener(self):
         # Start de ROS node
         rospy.init_node('Knoppen_listener')

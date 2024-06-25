@@ -1,4 +1,11 @@
 #!/usr/bin/env python
+'''
+opencv.py
+Purpose: detects the angle from image
+@author Matthijs Evers
+@version 0.9 2023/18/06
+License: CC BY-NC-SA
+'''
 
 import rospy
 import cv2
@@ -7,6 +14,7 @@ from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 from depthai_ros_msgs.msg import SpatialDetectionArray
+from robotica_pkg.srv import GetAngle, GetAngleResponse
 
 class ImageProcessor:
 
@@ -14,8 +22,10 @@ class ImageProcessor:
         self.display_image = True
         self.bridge = CvBridge()
         self.roi = (0, 0, 100, 100)  # Default ROI values
+        self.angle = 0.0
         self.pcl_sub = rospy.Subscriber("/stereo_inertial_nn_publisher/color/image", Image, self.image_callback)
         self.detections_sub = rospy.Subscriber("/stereo_inertial_nn_publisher/color/detections", SpatialDetectionArray, self.detections_callback)
+        self.angle_service = rospy.Service('get_angle', GetAngle, self.handle_get_angle)
 
     def detections_callback(self, msg):
         if len(msg.detections) > 0:
@@ -41,23 +51,19 @@ class ImageProcessor:
         x, y, w, h = self.roi
         img_roi = img[y:y+h, x:x+w]
         imgscale = cv2.resize(img_roi, (0, 0), fx=2, fy=2)
-        imgBlur = cv2.GaussianBlur(imgscale, (15, 15), 5)
+        imgBlur = cv2.GaussianBlur(imgscale, (7, 7), 7)
         imgCanny = cv2.Canny(imgBlur, 25, 75)
-        kernel_Dil = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
-        kernel_Erode = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+        kernel_Dil = cv2.getStructuringElement(cv2.MORPH_RECT, (9, 9))
+        kernel_Erode = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
         imgDil = cv2.dilate(imgCanny, kernel_Dil)
         imgErode = cv2.erode(imgDil, kernel_Erode)
 
-        # Fix for OpenCV 4.x: cv2.findContours returns only contours and hierarchy
         contours, hierarchy = cv2.findContours(imgErode, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2:]
 
         numBlob = len(contours)
         if numBlob == 0:
             print("Error: No contours found.")
             return
-
-        textm = "Er zijn " + str(numBlob)
-        cv2.putText(imgscale, textm, (5, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 50), 2)
 
         # Find the largest contour
         maxArea = 0
@@ -80,8 +86,8 @@ class ImageProcessor:
             if rect[1][0] < rect[1][1]:
                 angle += 90
 
+            self.angle = angle  # Store the angle value
             angleText = "Angle: " + str(angle) + " degrees"
-            cv2.putText(imgscale, angleText, (5, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
             print(angle)
             box = cv2.boxPoints(rect)
             box = np.int0(box)
@@ -102,13 +108,16 @@ class ImageProcessor:
             print("Error: No valid contour found.")
 
         if self.display_image:
-            cv2.imshow("Image window", img)
-            cv2.imshow("ImgScale", imgscale)
-            cv2.imshow("imgErode", imgErode)
+            #cv2.imshow("Image window", img)
+            #cv2.imshow("ImgScale", imgscale)
+            #cv2.imshow("imgErode", imgErode)
             if warped is not None:
                 cv2.imshow("imgWarped", warped)
 
-            cv2.waitKey(1)
+            cv2.waitKey(5)
+
+    def handle_get_angle(self, req):
+        return GetAngleResponse(self.angle)
 
 if __name__ == "__main__":
     rospy.init_node('image_processor')
@@ -121,3 +130,4 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("Shutting down")
     cv2.destroyAllWindows()
+

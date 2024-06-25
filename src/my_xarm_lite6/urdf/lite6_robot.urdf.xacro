@@ -124,14 +124,13 @@
   </link>
  
 
-
   <joint name="baseplate_joint" type="fixed">
     <origin xyz="0 0 -0.015" />
     <parent link="world" />
     <child link="baseplate_link" />
   </joint>
  
- 
+
   <link name="mountingplate_link">
     <visual>
       <origin xyz="0 0 0.0" />
@@ -194,10 +193,11 @@
 <collision>
       <origin xyz="-0.15 0 0.1"/>
       <geometry>
-        <box size="0.30 0.02 0.20"/>
+        <box size="0.30 0.02 0.21"/>
       </geometry>
     </collision>
   </link>
+
 
   <joint name="muur_joint" type="fixed">
     <origin xyz="-0.07 0.39 0" />
@@ -252,7 +252,7 @@
   </link>
 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="-0.29 0.645 0.76" rpy="1.5708 1.5708 3.1415" />
+    <origin xyz="-0.30 0.64 0.74" rpy="1.5708 1.5708 3.1415" />
     <parent link="world" />
     <child link="camera_link" />
   </joint>
@@ -300,7 +300,7 @@
   </link>
 
   <joint name="Bak_een" type="fixed">
-    <origin xyz="-0.25 0.22 0.0" />
+    <origin xyz="-0.255 0.22 0.0" />
     <parent link="world" />
     <child link="Bak_een_link" />
   </joint>
@@ -345,7 +345,7 @@
   </link>
 
   <joint name="Bak_twee" type="fixed">
-    <origin xyz="-0.105 0.0 0.0" />
+    <origin xyz="-0.11 0.0 0.0" />
     <parent link="Bak_een_link" />
     <child link="Bak_twee_link" />
   </joint>
@@ -390,7 +390,7 @@
   </link>
 
  <joint name="Bak_drie" type="fixed">
-    <origin xyz="-0.105 -0.110 0.07" />
+    <origin xyz="-0.11 -0.110 0.07" />
     <parent link="Bak_een_link" />
     <child link="Bak_drie_link" />
   </joint>
@@ -447,7 +447,7 @@
 <link name="cylinder_link">
     <visual>
       <geometry>
-        <cylinder radius="0.0370" length="0.045"/>
+        <cylinder radius="0.0370" length="0.050"/>
       </geometry>
       <material name="test"/>
     </visual>
@@ -464,8 +464,9 @@
 <link name="gripper_link">
     <visual>
       <geometry>
-        <box size="0.02 0.05 0.025" />
+        <box size="0.02 0.05 0.030" />
       </geometry>
+
       <material name="test"/>
     </visual>
   </link>
@@ -506,6 +507,7 @@
     <parent link="cylinder_link" />
     <child link="kabel_link" />
   </joint>
+
 
 
 </robot>
